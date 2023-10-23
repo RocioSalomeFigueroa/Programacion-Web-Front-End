@@ -1,0 +1,209 @@
+/* VARIABLES */
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray: #333;
+  --color-red: #8f1616;
+  --font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: var(--color-black);
+  margin: 0;
+}
+
+.logo h1 {
+  color: var(--color-white);
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* MENU DE NAVEGACION */
+
+.navegacion {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navegacion li {
+  margin-right: 20px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.3s;
+}
+
+.navegacion a:hover {
+  color: var(--color-red);
+}
+
+/* CONTENIDO */
+
+.contenedor {
+  display: flex;
+}
+
+/* SECCION DE PELICULAS */
+
+.peliculas {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-peliculas {
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card-peliculas img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-peliculas img:hover {
+  transform: scale(1.1);
+}
+
+/* SECCION LATERAL */
+.lateral {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  margin-top: 10px;
+  height: fit-content;
+}
+
+/* BUSCADOR */
+
+.buscador {
+  display: flex;
+  align-items: center;
+}
+
+.buscador input {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+}
+
+.buscador button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.buscador button:hover {
+  background-color: #0056b3;
+}
+
+/* SECCION DE DESTACADOS Y EXTRENOS */
+
+.destacados, .estrenos {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--color-gray);
+}
+
+.card-destacadas, .card-estrenos {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.destacados h3, .estrenos h3 {
+  font-size: 20px;
+  color: var(--color-white);
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.card-destacadas img, .card-estrenos img {
+  max-width: 70px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-destacadas img:hover, .card-estrenos img:hover {
+  opacity: 0.7;
+}
+
+/* PAGINADOR */
+
+.paginador {
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.paginador .active{
+  color: var(--color-red);
+}
+.paginador ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.paginador li {
+  margin: 0 5px;
+}
+
+.paginador a {
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.paginador a:hover {
+  color: var(--color-red);
+  background-color: transparent;
+}
+
+.paginador .siguiente, .paginador .anterior {
+  background: none;
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.paginador .siguiente:hover, .paginador .anterior:hover {
+  color: var(--color-red);
+}
+
+/*FOOTER */
+
+.footer {
+  font-family: var(--font-family);
+  color: var(--color-gray);
+  text-align: center;
+}
